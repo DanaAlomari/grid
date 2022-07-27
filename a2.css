@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  header,
+  footer {
+    background-color: rgb(106, 104, 104);
+    height: 70px;
+  }
+  header nav {
+    display: grid;
+    grid-template-columns: 150px auto;
+    justify-content: center;
+  }
+  
+  header ul {
+    width: 790px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  header ul li {
+    text-align: center;
+  }
+  header ul li a {
+    text-decoration: none;
+color: black;
+  }
+  
+  main {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 960px;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  main div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: space-between;
+  }
+  main div:nth-child(3) {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 460px);
+    justify-content: space-between;
+  }
+  main div:nth-child(3) section {
+    height: 350px;
+  }
+  main div:nth-child(3) section p {
+    height: 300px;
+    overflow-y: scroll;
+  }
+  main div:nth-child(3) section input {
+    margin: 10px;
+    width: 100px;
+    height: 20px;
+    background-color:black;
+    color: white;
+  }
+  
+  main div:nth-child(3) section p::-webkit-scrollbar {
+    display: none;
+  }
+  
+  main div:nth-child(3) section p {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+  
+  footer {
+    margin-top:50px;
+  }
